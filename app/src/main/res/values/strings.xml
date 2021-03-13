@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PA CVS Covid Vaccine Notification</string>
-    <string name="app_short_name">PA CVS Covid</string>
-    <string name="matt_s_cvs_covid_notifier">Matt\'s CVS Covid Notifier</string>
+    <string name="app_name">PA Covid Vaccine Notification</string>
+    <string name="app_short_name">PA Covid</string>
+    <string name="latest_update">Latest Update:</string>
 </resources>

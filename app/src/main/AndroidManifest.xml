@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.matthew.williams.cvscovidvaccinenotificaiton">
+    package="com.matthew.williams.covidvaccinenotificaiton">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:name="com.matthew.williams.cvscovidvaccinenotificaiton.CVSCovidVaccineNotification"
+        android:name="com.matthew.williams.covidvaccinenotificaiton.CovidVaccineNotification"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
@@ -13,13 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CVSCovidVaccineNotificaiton">
         <service
-            android:name="com.matthew.williams.cvscovidvaccinenotificaiton.CvsDownloadService"
+            android:name="com.matthew.williams.covidvaccinenotificaiton.DownloadService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
 
-        <activity android:name="com.matthew.williams.cvscovidvaccinenotificaiton.MainActivity">
+        <activity android:name="com.matthew.williams.covidvaccinenotificaiton.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
