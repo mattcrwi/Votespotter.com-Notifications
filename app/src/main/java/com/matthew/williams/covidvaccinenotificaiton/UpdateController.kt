@@ -50,17 +50,14 @@ class UpdateController constructor(private val applicationContext: Context) {
 
             var citiesWithAvailability: String = ""
             response.features.forEach {
-                if (it.properties?.appointmentsAvailable == true && it.properties?.providerBrandName != "Rite Aid") {
+                if (it.properties?.appointmentsAvailable == true) {
                     citiesWithAvailability += (it.properties?.providerBrandName + " " + it.properties?.city + "; ")
                 }
             }
             saveCityList(citiesWithAvailability)
             hasListChanged = oldList != citiesWithAvailability
 
-            if (response.features.firstOrNull {
-                    it.properties?.appointmentsAvailable == true
-                            && it.properties?.providerBrandName != "Rite Aid"
-                } != null
+            if (response.features.firstOrNull { it.properties?.appointmentsAvailable == true } != null
                 && hasListChanged) {
 
                 popNotification(citiesWithAvailability)
