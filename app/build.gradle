@@ -62,6 +62,7 @@ dependencies {
     implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
     implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.12.2"
     implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.2"
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
 
     def lifecycle_version = "2.3.0"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
